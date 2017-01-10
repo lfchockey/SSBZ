@@ -102,13 +102,13 @@ class Starship {
     
     //~~~
     // returns the values of the other Starship
-    func radar() -> (starshipPosition: CGPoint, starshipSpeed: CGPoint) {
+    func radar() -> (starshipPosition: CGPoint, starshipSpeed: CGPoint, life: Int) {
         
         if self.playerNumber == 1 {
-            return (Game.🚀2.sprite.position, Game.🚀2.speed)
+            return (Game.🚀2.sprite.position, Game.🚀2.speed, Game.🚀2.life)
         }
         else {
-            return (Game.🚀1.sprite.position, Game.🚀1.speed)
+            return (Game.🚀1.sprite.position, Game.🚀1.speed, Game.🚀1.life)
         }
         
     }
